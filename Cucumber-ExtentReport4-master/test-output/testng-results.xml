@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13623" started-at="2021-11-12T09:52:34 IST" finished-at="2021-11-12T09:52:48 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNgRunner@1060b431]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="13623" started-at="2021-11-12T09:52:34 IST" finished-at="2021-11-12T09:52:48 IST">
+      <class name="Runners.TestNgRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runners.TestNgRunner@1060b431]" name="setUpClass" is-config="true" duration-ms="266" started-at="2021-11-12T09:52:34 IST" finished-at="2021-11-12T09:52:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.TestNgRunner@1060b431]" name="runScenario" duration-ms="12626" started-at="2021-11-12T09:52:34 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-12T09:52:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Doing Google Search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Search"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Google Search - Google Search] but found [My Title]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Google Search - Google Search] but found [My Title]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at Steps.Steps.i_search_the_keyword_in_google_step(Steps.java:41)
+at ✽.I search the "Google Search" in google step(file:///C:/Users/Dell/Downloads/Cucumber-ExtentReport4-master/src/test/java/Features/Google.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runners.TestNgRunner@1060b431]" name="tearDownClass" is-config="true" duration-ms="661" started-at="2021-11-12T09:52:47 IST" finished-at="2021-11-12T09:52:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runners.TestNgRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
